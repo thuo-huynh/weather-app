@@ -1,12 +1,12 @@
 export type ThemeType = "light" | "dark";
 export type UnitType = "metric" | "imperial";
 
-export interface SettingModel {
+export interface SettingsModel {
   theme: ThemeType;
   unit: UnitType;
 }
 
-export const defaultSettings: SettingModel = {
+export const defaultSettings: SettingsModel = {
   theme: "light",
   unit: "metric",
 };

@@ -1,0 +1,14 @@
+@import "../../../styles/color-themes";
+@import "../../../styles/font-sizes";
+
+.loading {
+    @include theme() {
+        color: get-color("text");
+    }
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Barlow", sans-serif;
+    font-size: $caption-font-size;
+}
