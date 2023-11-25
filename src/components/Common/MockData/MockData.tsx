@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import "./MockData.scss";
 
 type MockDataProps = {
   children: ReactElement;
@@ -11,8 +12,7 @@ export const MockData = ({ children, useMockData }: MockDataProps) => {
       {useMockData ? (
         <>
           <div className="info-popup">
-            The application is running in demo mode. To run the application with
-            real data please check the{" "}
+            The application is running in demo mode.
           </div>
           {children}
         </>

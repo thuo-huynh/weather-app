@@ -1,0 +1,22 @@
+@import "../../styles/color-themes";
+@import "../../styles/media-queries";
+@import "../../styles/variables";
+@import "../../styles/font-size";
+@import "../../styles/animation";
+
+.container {
+    @include desktop {
+        width: $desktop-width;
+        padding: $desktop-padding-top-bottom $desktop-padding-left-right;
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat($desktop-grid-columns, 1fr);
+            grid-template-rows: repeat($desktop-grid-rows, auto);
+            column-gap: $desktop-grid-gap;
+            row-gap: $desktop-grid-gap;
+            animation: fadein $animation-time;
+        }
+    }
+    margin-left: auto;
+    margin-right: auto;
+}
