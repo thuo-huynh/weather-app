@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { EmptyCurrentWeather, SettingsModel } from "../../models";
 import Loading from "../Common/Loading/Loading";
 import MockData from "../Common/MockData/MockData";
@@ -24,6 +24,7 @@ export const Container = ({ settings, changeSettings }: ContainerProps) => {
   const changeLocationHandler = (location: string) => {
     setCurrentLocationName(location);
   };
+
   return (
     <MockData useMockData={useMockData}>
       <div className="container">
